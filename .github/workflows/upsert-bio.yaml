@@ -7,6 +7,7 @@ jobs:
     environment: upsert-bio
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - run: yarn install
       - run: yarn upsert
         env:
