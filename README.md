@@ -1,2 +1,2 @@
-# bluesky-bio
+# bsky-bio
 tracking my bluesky bio

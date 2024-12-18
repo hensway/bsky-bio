@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@atproto/api": "^0.13.21",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^22.10.2"
+  },
+  "type": "module",
+  "scripts": {
+    "upsert": "npx tsx upsert.ts"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+on:
+  push:
+    paths:
+      - "bio/*"
+jobs:
+  upsert-bio:
+    environment: upsert-bio
+    steps:
+      - run: yarn install
+      - run: yarn upsert
+        env:
+          IDENTIFIER: ${{ vars.identifier }}
+          APP_PASSWORD: ${{ secrets.app_password }}
