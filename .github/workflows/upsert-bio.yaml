@@ -5,6 +5,7 @@ on:
 jobs:
   upsert-bio:
     environment: upsert-bio
+    runs-on: ubuntu-latest
     steps:
       - run: yarn install
       - run: yarn upsert
